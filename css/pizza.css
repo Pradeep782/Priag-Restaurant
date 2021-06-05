@@ -1,0 +1,266 @@
+/* css reset */
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    overflow: hidden;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+
+/* css variables */
+:root{
+--primary-color:blue;
+--navbar-height:59px;
+}
+
+/* navigationbar styling */
+#navbar{
+    display:flex;
+    align-items: center;
+    position:sticky;
+    top:0px;
+
+}
+
+/* navbar logo and images styling */
+
+#logo img{
+    margin:4px 10px;
+    width:70px;
+    height:70px;
+}
+
+/* list styling */
+
+#navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.3;
+
+}
+
+#navbar ul{
+    display:flex;
+    list-style: none;
+    font-size:1.3 rem;
+    font-family: 'Baloo Tamma 2', cursive;
+  
+}
+
+#navbar ul a{
+    color:white;
+    text-decoration: none;
+    padding: 3px 22px;
+    margin:5px 7px;
+    border-radius:10px;
+}
+#navbar ul a:hover{
+    color:blue;
+    background-color: aqua;
+    
+}
+
+/* /* Home section styling */
+
+#Home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    justify-content: center;
+    align-items: center;
+    height:600px;
+    
+}
+#Home::before{
+    content:"";
+    position:absolute;
+    background: url('../project-2/123.jpg')no-repeat center center/cover;
+    top:0px;
+    left:0px;
+    height:130%;
+    width:100%;
+    z-index:-1;
+    opacity:0.89; 
+}
+
+#Home h1{
+    color:white;
+    text-align: center;
+    
+    font-family: 'Kaushan Script', cursive;
+    font-family: 'Markazi Text', serif;
+}
+p{
+    color:white;
+}
+/* services sectioning */
+.service-container{
+    background-color: darkcyan;
+    
+}
+
+#services{
+     margin:134px;
+     display:flex;
+    
+     align-items: center;
+     justify-content: center;
+     
+     
+
+}
+
+
+#services .box{
+     border:2px solid red;
+     margin:0px 50px;
+    
+     border-radius: 10px;
+     background-color: burlywood;
+     position: relative;
+     bottom:130px;
+   
+    
+}
+
+#services .box img{
+    height:100px;
+    margin:auto;
+    display:block;
+    
+    
+    
+}
+#services .box p{
+    font-family: sans-serif;
+}
+
+/* /* client Sectioning */
+#client-section{
+    height: 370px;
+    position:relative;
+    bottom:150px;
+}
+#client-section::before{
+    content:"";
+    position:absolute;
+    background: url('https://cdn.pixabay.com/photo/2015/02/02/11/09/office-620822_960_720.jpg') no-repeat center center/cover;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.89;
+
+
+}
+#clients{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.client-item{
+    padding:34px;
+}
+/* Contact sections */
+#contact{
+    position: relative;
+    bottom:150px;
+}
+#contact::before{
+    content:"";
+    position:absolute;
+    width:100%;
+    height:100%;
+    z-index:-1;
+    opacity:0.3;
+    background-color: paleturquoise;
+}
+#contact-box{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom:34px;
+}
+#contact-box form{
+    width:40%;
+
+}
+#contact-box label{
+    font-size:1.3rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width:100;
+    padding:0.5rem;
+    border-radius: 9px;
+    font-size:1.0rem;
+}
+
+footer{
+    
+    padding:9px 20px;
+    text-align:center;
+    background-color: tomato;
+    position:relative;
+    bottom:150px;
+
+}
+.center{
+    position:relative;
+    
+}
+.form-group{
+   position:relative;
+   left:110px;
+}
+
+/* utility class */
+.h-primary{
+    font-size:2.4rem;
+    padding:12px ;
+    text-align: center;
+    
+    }
+
+
+    
+
+.h-secondary{
+    font-size:2.4rem;
+    padding:12px;
+    text-align: center;
+
+}
+.btn{
+    padding:6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    margin:17px;
+    font-size:1.0rem;
+    border-radius:10px;
+    cursor: pointer;
+
+}
+.btn:hover{
+    background-color: darkcyan;
+}
+.center{
+    text-align:center;
+}
+
+
+
